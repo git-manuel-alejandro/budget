@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'budget/base.html'%}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+{% block content %}
 
-<body>
-    <h1>project-list</h1>
-</body>
+<div class="container">
+    <div class="noproject-wrapper center">
+        <h3 class="grey-text bold">Sorry, you don´t have any project, yet</h3>
+        <a href="" class="btn-large grey">
+            <i class="material-icons white-text left">add_circle</i>
+            <span class="bold">Add Projects</span>
+        </a>
+    </div>
+</div>
 
-</html>
+{% endblock%}
